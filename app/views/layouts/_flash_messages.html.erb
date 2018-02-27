@@ -1,0 +1,3 @@
+<% flash.each do |message_type, message| %>
+  <div id="notify" data-type="<%= message_type == 'notice' ? 'info' : message_type %>" class="hidden"><%= message %></div>
+<% end %>
